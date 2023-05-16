@@ -36,10 +36,12 @@ function ProductsPage() {
       <h2 className="fw-bold text-uppercase text-center mt-5">
         Our <span style={{ color: '#373B61' }}>Products</span>
       </h2>
-      <div className="d-flex flex-wrap justify-content-center align-items-center mt-5">
+      <div className="d-flex flex-wrap justify-content-center  mt-5">
         {displayedItems.map((item) => (
-          <div className="card mx-2 my-4" style={{ width: '18rem' }} key={item.id}>
-            <img src={item.image} className="card-img-top" alt=""  />
+          <div className="card mx-2 my-4" style={{ width: '20rem' }} key={item.id}>
+           <div className="">
+           <img src={item.image} className="card-img-top" alt=""  />
+           </div>
             <div className="card-body">
               <h5 className="card-title fw-bold">{item.title}</h5>
               <p className="card-text">{item.description}</p> 
